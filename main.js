@@ -5,6 +5,19 @@ var app = new Vue({
         description: 'A pair of warm, fuzzy socks.',
         image: './assets/socks.jpg',
         link: 'https://www.google.com',
-        inventory: 100
+        inventory: 100,
+        onSale: true,
+        details: ["80% cotton", "20% polyester", "Gender neutral"],
+        variants: [
+            {
+                variantId: 2234,
+                variantColor: "green"
+            },
+            {
+                variantId: 2235,
+                variantColor: "blue"
+            }
+        ],
+        sizes: ["Baby", "Youth", "Adults"]
     }
 })
