@@ -6,6 +6,7 @@ var app = new Vue({
         image: './assets/socks-green.jpg',
         link: 'https://www.google.com',
         inventory: 100,
+        inStock: true,
         onSale: true,
         details: ["80% cotton", "20% polyester", "Gender neutral"],
         variants: [

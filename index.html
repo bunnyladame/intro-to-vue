@@ -41,7 +41,9 @@
 
                 <p><a :href="link">More Info</a></p>
             
-                <button v-on:click="addToCart">Add to Cart</button>
+                <button v-on:click="addToCart"
+                  :disabled="!inStock"
+                  :class="{ disabledButton: !inStock }">Add to Cart</button>
                 <button v-on:click="removeFromCart">Remove from Cart</button>
 
                 <div class="cart">
