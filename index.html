@@ -36,7 +36,14 @@
                     <li v-for="size in sizes">{{ size }}</li>
                 </ul>
 
-                <a :href="link">More Info</a>
+                <p><a :href="link">More Info</a></p>
+            
+                <button v-on:click="addToCart">Add to Cart</button>
+
+                <div class="cart">
+                    <p>Cart({{ cart }})</p>
+                </div>
+
             </div>
         </div>
     </div>
