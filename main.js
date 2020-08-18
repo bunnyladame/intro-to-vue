@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         product: 'Socks',
         description: 'A pair of warm, fuzzy socks.',
-        image: './assets/socks.jpg',
+        image: './assets/socks-green.jpg',
         link: 'https://www.google.com',
         inventory: 100,
         onSale: true,
@@ -24,8 +24,16 @@ var app = new Vue({
         cart: 0
     },
     methods: {
-        addToCart: function () {
+        addToCart() {
             this.cart += 1
+        },
+        updateProduct(variantImage) {
+            this.image = variantImage
+        },
+        removeFromCart() {
+            if (this.cart > 0) {
+                this.cart -= 1
+            }
         }
     }
 })
