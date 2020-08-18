@@ -7,6 +7,7 @@ var app = new Vue({
         link: 'https://www.google.com',
         inventory: 100,
         inStock: true,
+        brand: 'Vue Mastery',
         onSale: true,
         details: ["80% cotton", "20% polyester", "Gender neutral"],
         variants: [
