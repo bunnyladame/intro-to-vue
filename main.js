@@ -37,5 +37,10 @@ var app = new Vue({
                 this.cart -= 1
             }
         }
+    },
+    computed: {
+        title() {
+            return this.brand + ' ' + this.product
+        }
     }
 })
