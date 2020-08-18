@@ -5,6 +5,6 @@ var app = new Vue({
         description: 'A pair of warm, fuzzy socks.',
         image: './assets/socks.jpg',
         link: 'https://www.google.com',
-        inStock: true
+        inventory: 100
     }
 })
